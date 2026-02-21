@@ -6,13 +6,10 @@ import heroBg from "@/assets/hero-bg.jpg";
 const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img src={heroBg} alt="" className="w-full h-full object-cover opacity-40" />
         <div className="absolute inset-0 gradient-hero opacity-70" />
       </div>
-
-      {/* Glow effect */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] gradient-glow animate-pulse-glow" />
 
       <div className="container relative z-10 mx-auto px-4 text-center">
@@ -23,17 +20,17 @@ const HeroSection = () => {
         >
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-4 py-1.5 mb-8">
             <span className="h-2 w-2 rounded-full bg-secondary animate-pulse" />
-            <span className="text-sm text-muted-foreground font-mono">AI-Powered Email Protection</span>
+            <span className="text-sm text-muted-foreground font-mono">AI-Powered Threat Detection</span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight text-foreground max-w-4xl mx-auto leading-[1.1]">
-            Stop Phishing Attacks{" "}
-            <span className="text-gradient">Before They Start</span>
+            Stop Online Threats{" "}
+            <span className="text-gradient">Before They Strike</span>
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Your inbox is under attack. Every day, millions of phishing emails slip past spam filters. 
-            SentinelMind uses AI to catch what others miss—flagging suspicious emails before you click.
+            Phishing emails, fake download buttons, malicious links — threats are everywhere. 
+            SentinelMind uses AI to flag anything suspicious on your screen before you click.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">

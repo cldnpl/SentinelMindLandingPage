@@ -9,15 +9,15 @@ import {
 const faqs = [
   {
     q: "How does SentinelMind work?",
-    a: "SentinelMind runs as a Chrome extension. When you open Gmail, it scans your inbox emails and analyzes them using Claude AI to detect phishing indicators like urgency tactics, authority impersonation, and suspicious links. Results appear as inline badges directly in your inbox.",
+    a: "SentinelMind runs as a Chrome extension that scans every page you visit. It uses Claude AI to analyze emails, links, buttons, popups, and other interactive elements for phishing indicators like urgency tactics, disguised URLs, fake download buttons, and authority impersonation.",
   },
   {
     q: "Is my data safe?",
-    a: "Absolutely. SentinelMind is privacy-first. It runs locally in your browser and only sends email content to Claude AI for analysis. No data is stored, logged, or shared with any third party. The extension is also fully open source so you can verify this yourself.",
+    a: "Absolutely. SentinelMind is privacy-first. It runs locally in your browser and only sends page content to Claude AI for analysis. No data is stored, logged, or shared with any third party. The extension is also fully open source so you can verify this yourself.",
   },
   {
-    q: "Which sites are scanned?",
-    a: "SentinelMind only activates on Gmail (mail.google.com). When checking links, it skips trusted domains like Google, YouTube, GitHub, and other well-known sites to save resources and reduce false positives.",
+    q: "What does it scan?",
+    a: "SentinelMind scans everything on the page — emails in Gmail, links anywhere on the web, download buttons, form submissions, popups, and any interactive element that could be deceptive. It skips trusted domains like Google, YouTube, and GitHub to save resources.",
   },
   {
     q: "Is it free?",

@@ -4,29 +4,29 @@ import { Scan, AlertTriangle, Link2, Brain, Lock, Settings } from "lucide-react"
 const features = [
   {
     icon: Scan,
-    title: "See Threats Instantly",
-    description: "Suspicious emails are marked with a warning badge right in your inbox. No need to open them to know they're risky.",
+    title: "Full-Page Threat Scanning",
+    description: "Every element on the page is analyzed — emails, buttons, links, forms, and popups. If it's suspicious, you'll know.",
   },
   {
     icon: AlertTriangle,
-    title: "Inline Email Warnings",
-    description: "⚠ Suspicious badges appear directly on risky emails in your inbox list for immediate visibility.",
+    title: "Inline Visual Warnings",
+    description: "⚠ Suspicious badges appear directly on risky elements — whether it's an email, a download button, or a deceptive link.",
     accent: true,
   },
   {
     icon: Link2,
     title: "Think Before You Click",
-    description: "When you click a suspicious link, SentinelMind asks for confirmation. One extra step that could save you from a breach.",
+    description: "Clicking a suspicious link or download triggers a confirmation dialog. One extra step that could save you from a breach.",
   },
   {
     icon: Brain,
     title: "AI That Understands Deception",
-    description: "Powered by Claude, SentinelMind detects manipulation tactics like fake urgency, authority impersonation, and fear-based messaging.",
+    description: "Powered by Claude, SentinelMind detects manipulation tactics like fake urgency, disguised downloads, authority impersonation, and fear-based messaging.",
   },
   {
     icon: Lock,
     title: "Privacy-First",
-    description: "Runs locally in your browser. Only sends email content to AI for analysis. No data is ever stored or shared.",
+    description: "Runs locally in your browser. Only sends page content to AI for analysis. No data is ever stored or shared.",
   },
   {
     icon: Settings,
