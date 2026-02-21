@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download, Mail, ShieldCheck } from "lucide-react";
+import { Download, Globe, ShieldCheck } from "lucide-react";
 
 const steps = [
   {
@@ -9,16 +9,16 @@ const steps = [
     description: "Add SentinelMind to Chrome in one click. No configuration needed.",
   },
   {
-    icon: Mail,
+    icon: Globe,
     step: "02",
-    title: "Open Gmail",
-    description: "SentinelMind automatically activates when you open your Gmail inbox.",
+    title: "Browse the Web",
+    description: "SentinelMind automatically scans every page you visit — Gmail, websites, downloads, and more.",
   },
   {
     icon: ShieldCheck,
     step: "03",
     title: "Get Instant Warnings",
-    description: "Suspicious emails are flagged with warning badges. Risky links trigger confirmation dialogs.",
+    description: "Suspicious emails, fake buttons, phishing links, and shady downloads are flagged before you interact.",
   },
 ];
 

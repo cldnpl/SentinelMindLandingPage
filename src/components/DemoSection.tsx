@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { AlertTriangle, Shield, ExternalLink, Check, X } from "lucide-react";
+import { AlertTriangle, Shield, ExternalLink, Check, X, Download } from "lucide-react";
 
 const DemoSection = () => {
   return (
@@ -35,7 +35,6 @@ const DemoSection = () => {
               <span className="text-xs text-muted-foreground font-mono ml-2">Gmail — Inbox</span>
             </div>
             <div className="p-1">
-              {/* Safe email */}
               <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50 hover:bg-muted/20 rounded">
                 <div className="h-8 w-8 rounded-full bg-secondary/20 flex items-center justify-center text-xs font-bold text-secondary">JD</div>
                 <div className="flex-1 min-w-0">
@@ -44,7 +43,6 @@ const DemoSection = () => {
                 </div>
                 <span className="text-xs text-muted-foreground">2:30 PM</span>
               </div>
-              {/* Suspicious email */}
               <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50 bg-destructive/5 rounded">
                 <div className="h-8 w-8 rounded-full bg-destructive/20 flex items-center justify-center text-xs font-bold text-destructive">!!</div>
                 <div className="flex-1 min-w-0">
@@ -58,7 +56,6 @@ const DemoSection = () => {
                 </div>
                 <span className="text-xs text-muted-foreground">1:15 PM</span>
               </div>
-              {/* Another safe email */}
               <div className="flex items-center gap-3 px-4 py-3 border-b border-border/50 hover:bg-muted/20 rounded">
                 <div className="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">GH</div>
                 <div className="flex-1 min-w-0">
@@ -67,7 +64,6 @@ const DemoSection = () => {
                 </div>
                 <span className="text-xs text-muted-foreground">11:00 AM</span>
               </div>
-              {/* Another suspicious */}
               <div className="flex items-center gap-3 px-4 py-3 bg-destructive/5 rounded">
                 <div className="h-8 w-8 rounded-full bg-destructive/20 flex items-center justify-center text-xs font-bold text-destructive">PP</div>
                 <div className="flex-1 min-w-0">
@@ -84,14 +80,14 @@ const DemoSection = () => {
             </div>
           </motion.div>
 
-          {/* Link confirmation dialog mockup */}
+          {/* Right column: link dialog + download warning + status */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="flex flex-col gap-6"
           >
-            {/* Dialog */}
+            {/* Link confirmation dialog */}
             <div className="gradient-card rounded-xl border border-destructive/30 shadow-card p-6">
               <div className="flex items-center gap-3 mb-4">
                 <div className="h-10 w-10 rounded-full bg-destructive/20 flex items-center justify-center">
@@ -123,6 +119,31 @@ const DemoSection = () => {
               </div>
             </div>
 
+            {/* Fake download button warning */}
+            <div className="gradient-card rounded-xl border border-warning/30 shadow-card p-5">
+              <div className="flex items-center gap-3 mb-3">
+                <div className="h-9 w-9 rounded-full bg-warning/20 flex items-center justify-center">
+                  <Download className="h-4 w-4 text-warning" />
+                </div>
+                <div>
+                  <h4 className="font-bold text-foreground text-sm">⚠ Fake Download Button Flagged</h4>
+                  <p className="text-xs text-muted-foreground">Element blocked on page</p>
+                </div>
+              </div>
+              <div className="rounded-lg bg-muted/50 border border-border p-3">
+                <p className="text-xs text-muted-foreground mb-1">Detected element:</p>
+                <div className="flex items-center gap-2">
+                  <span className="inline-flex items-center gap-1.5 rounded-md bg-secondary/20 border border-secondary/30 px-3 py-1.5 text-xs font-bold text-secondary line-through opacity-60">
+                    <Download className="h-3 w-3" /> Download Now — Free!
+                  </span>
+                  <span className="inline-flex items-center gap-1 rounded-full bg-warning/20 px-2 py-0.5 text-[10px] font-bold text-warning">
+                    <AlertTriangle className="h-3 w-3" /> Deceptive
+                  </span>
+                </div>
+                <p className="text-xs text-muted-foreground mt-2">This button redirects to an ad-network, not a real download.</p>
+              </div>
+            </div>
+
             {/* Status banner */}
             <div className="gradient-card rounded-xl border border-secondary/30 shadow-card p-4">
               <div className="flex items-center justify-between">
@@ -130,12 +151,12 @@ const DemoSection = () => {
                   <Shield className="h-5 w-5 text-secondary" />
                   <div>
                     <p className="text-sm font-semibold text-foreground">SentinelMind Active</p>
-                    <p className="text-xs text-muted-foreground">Monitoring your inbox</p>
+                    <p className="text-xs text-muted-foreground">Monitoring this page</p>
                   </div>
                 </div>
                 <div className="text-right">
-                  <p className="text-sm font-bold text-secondary">3 threats blocked</p>
-                  <p className="text-xs text-muted-foreground">12 emails scanned</p>
+                  <p className="text-sm font-bold text-secondary">5 threats blocked</p>
+                  <p className="text-xs text-muted-foreground">23 elements scanned</p>
                 </div>
               </div>
             </div>
