@@ -55,10 +55,10 @@ const FeaturesGrid = () => {
           {features.map((feature, i) => (
             <motion.div
               key={feature.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              initial={{ opacity: 0, y: 30, scale: 0.9 }}
+              whileInView={{ opacity: 1, y: 0, scale: 1 }}
+              viewport={{ once: true, margin: "-40px" }}
+              transition={{ delay: i * 0.1, duration: 0.5, type: "spring", stiffness: 100 }}
               className={`gradient-card rounded-xl border p-6 transition-all hover:border-primary/40 hover:shadow-glow ${
                 feature.accent ? "border-warning/30" : "border-border"
               }`}
