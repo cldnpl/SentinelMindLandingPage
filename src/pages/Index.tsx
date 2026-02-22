@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import HowItWorks from "@/components/HowItWorks";
 import FeaturesGrid from "@/components/FeaturesGrid";
+import BigFiveSection from "@/components/BigFiveSection";
 import DemoSection from "@/components/DemoSection";
 import TrustSignals from "@/components/TrustSignals";
 import FAQSection from "@/components/FAQSection";
@@ -14,6 +15,7 @@ const Index = () => {
       <HeroSection />
       <HowItWorks />
       <FeaturesGrid />
+      <BigFiveSection />
       <DemoSection />
       <TrustSignals />
       <FAQSection />
