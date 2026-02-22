@@ -3,7 +3,8 @@ import { Shield, Github, BookOpen } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <footer className="border-t border-border py-12">
+    <footer className="relative py-12">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -13,12 +13,19 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
+      <div className="h-24 bg-gradient-to-b from-transparent to-background" />
       <HowItWorks />
+      <div className="h-24 bg-gradient-to-b from-background via-background to-background" />
       <FeaturesGrid />
+      <div className="h-24 bg-gradient-to-b from-background to-background" />
       <BigFiveSection />
+      <div className="h-24 bg-gradient-to-b from-background to-background" />
       <DemoSection />
+      <div className="h-24 bg-gradient-to-b from-background to-background" />
       <TrustSignals />
+      <div className="h-24 bg-gradient-to-b from-background to-background" />
       <FAQSection />
+      <div className="h-24 bg-gradient-to-b from-background to-background" />
       <FooterSection />
     </div>
   );

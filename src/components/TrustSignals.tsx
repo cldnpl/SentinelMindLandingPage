@@ -9,7 +9,9 @@ const signals = [
 
 const TrustSignals = () => {
   return (
-    <section className="py-16 border-y border-border">
+    <section className="py-16 relative">
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
           {signals.map((signal, i) => (
