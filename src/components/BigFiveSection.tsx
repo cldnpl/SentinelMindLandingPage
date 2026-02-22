@@ -22,7 +22,7 @@ const traits = [
   },
   {
     icon: Skull,
-    name: "Fear / Intimidation",
+    name: "Intimidation",
     vector: 'The "Consequence" Vector',
     description: "Threatening negative outcomes (legal, financial, or professional) if the user does not comply.",
     triggers: ["Unauthorized login detected", "Your account will be deleted", "Legal action is pending"],
@@ -31,7 +31,7 @@ const traits = [
   },
   {
     icon: Heart,
-    name: "Helpfulness / Empathy",
+    name: "Empathy",
     vector: 'The "Reciprocity" Vector',
     description: "Exploiting the user's desire to be a good person or to help a colleague in need.",
     triggers: ["I'm stuck and need a favor", "Can you help me with this file?", "I'm a new intern"],
@@ -40,7 +40,7 @@ const traits = [
   },
   {
     icon: Sparkles,
-    name: "Curiosity / Scarcity",
+    name: "Curiosity",
     vector: 'The "Novelty" Vector',
     description: '"Too good to be true" offers or mysterious information to provoke a click.',
     triggers: ["Confidential Salary List", "Exclusive Invite", "You've been mentioned in this document"],
