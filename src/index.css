@@ -64,13 +64,6 @@
 @layer base {
   * {
     @apply border-border;
-    cursor: none !important;
-  }
-
-  @media (pointer: coarse) {
-    * {
-      cursor: auto !important;
-    }
   }
 
   body {
