@@ -11,7 +11,7 @@ const features = [
     icon: AlertTriangle,
     title: "Inline Visual Warnings",
     description: "⚠ Suspicious badges appear directly on risky elements — whether it's an email, a download button, or a deceptive link.",
-    accent: true,
+    
   },
   {
     icon: Link2,
@@ -59,14 +59,10 @@ const FeaturesGrid = () => {
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ delay: i * 0.1, duration: 0.5, type: "spring", stiffness: 100 }}
-              className={`gradient-card rounded-xl border p-6 transition-all hover:border-primary/40 hover:shadow-glow ${
-                feature.accent ? "border-warning/30" : "border-border"
-              }`}
+              className="gradient-card rounded-xl border border-border p-6 transition-all hover:border-primary/40 hover:shadow-glow"
             >
-              <div className={`mb-4 flex h-11 w-11 items-center justify-center rounded-lg ${
-                feature.accent ? "bg-warning/10" : "bg-primary/10"
-              }`}>
-                <feature.icon className={`h-5 w-5 ${feature.accent ? "text-warning" : "text-primary"}`} />
+              <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10">
+                <feature.icon className="h-5 w-5 text-primary" />
               </div>
               <h3 className="text-lg font-bold text-foreground mb-2">{feature.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
