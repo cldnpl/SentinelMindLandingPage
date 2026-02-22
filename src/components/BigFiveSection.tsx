@@ -27,7 +27,7 @@ const traits = [
     description: "Threatening negative outcomes (legal, financial, or professional) if the user does not comply.",
     triggers: ["Unauthorized login detected", "Your account will be deleted", "Legal action is pending"],
     psychology: 'Fear triggers an "Amygdala Hijack," where the brain\'s threat-detection center takes over, making logical reasoning nearly impossible.',
-    color: "destructive",
+    color: "violet",
   },
   {
     icon: Heart,
@@ -73,6 +73,12 @@ const colorMap: Record<string, { bg: string; text: string; border: string; iconB
     text: "text-secondary",
     border: "border-secondary/20",
     iconBg: "bg-secondary/10",
+  },
+  violet: {
+    bg: "bg-purple-500/5",
+    text: "text-purple-400",
+    border: "border-purple-500/20",
+    iconBg: "bg-purple-500/10",
   },
 };
 
