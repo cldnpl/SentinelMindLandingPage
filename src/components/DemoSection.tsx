@@ -21,9 +21,10 @@ const DemoSection = () => {
         <div className="grid lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {/* Gmail inbox mockup */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, x: -50, rotateY: -8 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
             className="gradient-card rounded-xl border border-border shadow-card overflow-hidden"
           >
             <div className="flex items-center gap-2 px-4 py-3 border-b border-border bg-muted/30">
@@ -82,9 +83,10 @@ const DemoSection = () => {
 
           {/* Right column: link dialog + download warning + status */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            initial={{ opacity: 0, x: 50, rotateY: 8 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+            viewport={{ once: true, margin: "-60px" }}
+            transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             className="flex flex-col gap-6"
           >
             {/* Link confirmation dialog */}

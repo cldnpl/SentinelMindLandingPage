@@ -18,22 +18,42 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-4 py-1.5 mb-8">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-muted/50 px-4 py-1.5 mb-8"
+          >
             <span className="h-2 w-2 rounded-full bg-secondary animate-pulse" />
             <span className="text-sm text-muted-foreground font-mono">AI-Powered Threat Detection</span>
-          </div>
+          </motion.div>
 
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight text-foreground max-w-4xl mx-auto leading-[1.1]">
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.7, ease: "easeOut" }}
+            className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight text-foreground max-w-4xl mx-auto leading-[1.1]"
+          >
             Stop Online Threats{" "}
             <span className="text-gradient">Before They Strike</span>
-          </h1>
+          </motion.h1>
 
-          <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
+            className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
+          >
             Phishing emails, fake download buttons, malicious links — threats are everywhere. 
             SentinelMind uses AI to flag anything suspicious on your screen before you click.
-          </p>
+          </motion.p>
 
-          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.8, duration: 0.5 }}
+            className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
             <Button size="lg" className="gradient-primary text-primary-foreground font-bold text-lg px-8 py-6 shadow-glow">
               <Chrome className="mr-2 h-5 w-5" />
               Add to Chrome — It's Free
@@ -43,7 +63,7 @@ const HeroSection = () => {
                 See How It Works
               </Button>
             </a>
-          </div>
+          </motion.div>
         </motion.div>
 
         <motion.div

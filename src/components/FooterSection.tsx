@@ -1,10 +1,17 @@
+import { motion } from "framer-motion";
 import { Shield, Github, BookOpen } from "lucide-react";
 
 const FooterSection = () => {
   return (
     <footer className="border-t border-border py-12">
       <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col md:flex-row items-center justify-between gap-6"
+        >
           <div className="flex items-center gap-2">
             <Shield className="h-5 w-5 text-primary" />
             <span className="font-bold text-foreground">SentinelMind</span>
@@ -28,10 +35,16 @@ const FooterSection = () => {
               <BookOpen className="h-4 w-4" /> Setup Guide
             </a>
           </div>
-        </div>
-        <div className="mt-8 text-center text-xs text-muted-foreground">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="mt-8 text-center text-xs text-muted-foreground"
+        >
           © {new Date().getFullYear()} SentinelMind. Open source under MIT License.
-        </div>
+        </motion.div>
       </div>
     </footer>
   );

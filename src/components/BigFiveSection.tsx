@@ -119,10 +119,10 @@ const BigFiveSection = () => {
             return (
               <motion.div
                 key={trait.name}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                initial={{ opacity: 0, x: -40, rotateY: -5 }}
+                whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+                viewport={{ once: true, margin: "-30px" }}
+                transition={{ delay: i * 0.12, duration: 0.6, ease: "easeOut" }}
                 className={`gradient-card rounded-xl border ${colors.border} p-6 shadow-card`}
               >
                 <div className="flex flex-col md:flex-row md:items-start gap-4">
