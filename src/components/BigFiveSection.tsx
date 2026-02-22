@@ -86,6 +86,8 @@ const BigFiveSection = () => {
   return (
     <section id="big-five" className="py-24 relative">
       <div className="absolute inset-0 gradient-glow opacity-20" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background to-transparent" />
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-background" />
       <div className="container relative z-10 mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
