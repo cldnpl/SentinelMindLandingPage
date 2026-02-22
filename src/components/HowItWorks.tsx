@@ -49,7 +49,7 @@ const HowItWorks = () => {
               transition={{ delay: i * 0.2, duration: 0.6, ease: "easeOut" }}
               className="relative gradient-card rounded-xl border border-border p-8 text-center shadow-card"
             >
-              <div className="text-6xl font-black text-primary/10 absolute top-4 right-6">{step.step}</div>
+              
               <div className="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-xl gradient-primary shadow-glow">
                 <step.icon className="h-7 w-7 text-primary-foreground" />
               </div>
